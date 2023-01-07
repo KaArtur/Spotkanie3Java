@@ -5,8 +5,8 @@ public class Boy extends Human {
     }
     public static void main(String[] args) {
     Boy boy = new Boy();
-        boy.eat();
 
+        boy.eat();
         Human human = new Human();
         human.eat();
     }

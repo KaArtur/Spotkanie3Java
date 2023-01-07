@@ -1,21 +1,31 @@
 public class A {
+    public A() {
+        super();
+        System.out.println("Działa konstruktor A()");
+    }
 
-    void show() {
-        System.out.println("A");
+    public A(String param) {
+        System.out.println("Działa konstruktor A(" + param + ")");
     }
 
 }
 
 class B extends A {
-
-    void show() {
-        System.out.println("B");
+    public B() {
+        super();
+        System.out.println("Działa konstruktor B()");
     }
 
-    public static void main(String[] args) {
-        B b = new B();
-        b.show();
+    public B (String param) {
+        super(param);
+        System.out.println("Działa konstruktor B(" + param + ")");
+    }
 
+}
+
+class Test {
+    public static void main(String[] args) {
+        B b = new B("test");
     }
 
 }
